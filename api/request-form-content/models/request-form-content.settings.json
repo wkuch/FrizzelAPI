@@ -1,0 +1,20 @@
+{
+  "kind": "collectionType",
+  "connection": "default",
+  "collectionName": "request_form_contents",
+  "info": {
+    "name": "Request Form Content"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Introtext": {
+      "type": "text"
+    },
+    "image_selections": {
+      "collection": "image-selection"
+    }
+  }
+}

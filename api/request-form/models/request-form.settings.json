@@ -1,0 +1,53 @@
+{
+  "kind": "collectionType",
+  "connection": "default",
+  "collectionName": "request_forms",
+  "info": {
+    "name": "RequestForm"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "Email": {
+      "type": "email"
+    },
+    "Refenzbild": {
+      "collection": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    },
+    "AdditionalInfo": {
+      "type": "text"
+    },
+    "Style": {
+      "type": "enumeration",
+      "enum": [
+        "Pencil",
+        "Comic",
+        "WaterColor"
+      ]
+    },
+    "Detail": {
+      "type": "enumeration",
+      "enum": [
+        "Sketch",
+        "Colored",
+        "WithBackground"
+      ]
+    },
+    "NumberOfCharacters": {
+      "type": "enumeration",
+      "enum": [
+        "One",
+        "Two",
+        "More"
+      ]
+    }
+  }
+}
