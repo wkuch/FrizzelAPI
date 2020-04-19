@@ -1,9 +1,9 @@
 {
   "kind": "collectionType",
   "connection": "default",
-  "collectionName": "images",
+  "collectionName": "about_mes",
   "info": {
-    "name": "Image"
+    "name": "About Me"
   },
   "options": {
     "increments": true,
@@ -14,19 +14,22 @@
       "type": "string"
     },
     "Description": {
-      "type": "richtext"
+      "type": "text"
     },
-    "original": {
+    "InstaButton": {
       "model": "file",
       "via": "related",
       "plugin": "upload",
       "required": false
     },
-    "thumbnail": {
+    "redbubbleButton": {
       "model": "file",
       "via": "related",
       "plugin": "upload",
       "required": false
+    },
+    "about_me_parts": {
+      "collection": "about-me-part"
     }
   }
 }

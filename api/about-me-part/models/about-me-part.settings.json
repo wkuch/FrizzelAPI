@@ -1,28 +1,22 @@
 {
   "kind": "collectionType",
   "connection": "default",
-  "collectionName": "images",
+  "collectionName": "about_me_parts",
   "info": {
-    "name": "Image"
+    "name": "aboutMePart"
   },
   "options": {
     "increments": true,
     "timestamps": true
   },
   "attributes": {
-    "Title": {
+    "topic": {
       "type": "string"
     },
-    "Description": {
-      "type": "richtext"
+    "text": {
+      "type": "text"
     },
-    "original": {
-      "model": "file",
-      "via": "related",
-      "plugin": "upload",
-      "required": false
-    },
-    "thumbnail": {
+    "image": {
       "model": "file",
       "via": "related",
       "plugin": "upload",
