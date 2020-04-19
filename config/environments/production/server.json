@@ -1,5 +1,5 @@
 {
-  "host": "207.180.247.98",
+  "host": "api.frizzelblizzel.de",
   "port": "${process.env.PORT || 1337}",
   "production": true,
   "proxy": {
