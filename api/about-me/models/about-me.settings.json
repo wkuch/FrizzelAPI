@@ -1,6 +1,5 @@
 {
   "kind": "collectionType",
-  "connection": "default",
   "collectionName": "about_mes",
   "info": {
     "name": "About Me"
@@ -19,12 +18,22 @@
     "InstaButton": {
       "model": "file",
       "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
       "plugin": "upload",
       "required": false
     },
-    "redbubbleButton": {
+    "RedbubbleButton": {
       "model": "file",
       "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
       "plugin": "upload",
       "required": false
     },

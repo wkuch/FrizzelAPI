@@ -1,24 +1,28 @@
 {
   "kind": "collectionType",
-  "connection": "default",
   "collectionName": "about_me_parts",
   "info": {
-    "name": "aboutMePart"
+    "name": "AboutMePart"
   },
   "options": {
     "increments": true,
     "timestamps": true
   },
   "attributes": {
-    "topic": {
+    "Topic": {
       "type": "string"
     },
-    "text": {
+    "Text": {
       "type": "text"
     },
-    "image": {
+    "Image": {
       "model": "file",
       "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
       "plugin": "upload",
       "required": false
     }
