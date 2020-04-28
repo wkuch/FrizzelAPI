@@ -12,9 +12,6 @@
     "Topic": {
       "type": "string"
     },
-    "Text": {
-      "type": "text"
-    },
     "Image": {
       "model": "file",
       "via": "related",
@@ -25,6 +22,9 @@
       ],
       "plugin": "upload",
       "required": false
+    },
+    "FormattedText": {
+      "type": "richtext"
     }
   }
 }
