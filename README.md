@@ -1,3 +1,2 @@
 # Strapi application
-
-A quick description of your strapi application
+Strapi as a CMS for [FrizzelBlizzel](https://www.instagram.com/frizzelblizzel/).
