@@ -1,2 +1,2 @@
 # Strapi application
-Strapi as a CMS for [FrizzelBlizzel](https://www.instagram.com/frizzelblizzel/).
+Strapi as a CMS for [FrizzelBlizzel.de](https://www.frizzelblizzel.de)
